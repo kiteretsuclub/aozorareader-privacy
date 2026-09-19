@@ -26,7 +26,7 @@
 <body>
 
 <h1>プライバシーポリシー</h1>
-<p class="updated">青空文庫リーダー（以下「本アプリ」）／最終更新日: 2026年9月1日</p>
+<p class="updated">青空文庫リーダー（以下「本アプリ」）／最終更新日: 2026年9月19日</p>
 
 <p>本アプリは、青空文庫で公開されている作品を読むためのアプリです。本ポリシーは、本アプリが取り扱う情報とその目的について説明します。</p>
 
@@ -41,18 +41,19 @@
 <p>これらはアプリを削除すると端末から消去されます。</p>
 
 <h2>2. アカウント連携と同期</h2>
-<p>Googleアカウントでログインすると、読書位置・本棚の構成・表示設定をクラウドに保存し、同じアカウントでログインした他の端末へ引き継げます。ログインは任意で、ログインしなくても本アプリのすべての読書機能を利用できます。</p>
+<p>Googleアカウント、またはApple Account（Appleでサインイン、iOS版のみ）でログインすると、読書位置・本棚の構成・表示設定をクラウドに保存し、同じアカウントでログインした他の端末へ引き継げます。ログインは任意で、ログインしなくても本アプリのすべての読書機能を利用できます。</p>
 <ul>
-  <li><strong>利用するサービス</strong>：認証に Google の Firebase Authentication、データの保存に Cloud Firestore（保存先リージョン: 東京）を利用します。Google のデータの取り扱いについては <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a> をご確認ください。</li>
-  <li><strong>保存される情報</strong>：Googleアカウントの識別子・表示名・メールアドレス（認証のため）と、読書位置・本棚・表示設定です。保存したデータは、本人のログインでのみ読み書きできるよう制限しています。</li>
+  <li><strong>利用するサービス</strong>：認証に Google の Firebase Authentication（Appleでサインインの場合は Apple の認証を経由します）、データの保存に Cloud Firestore（保存先リージョン: 東京）を利用します。Google のデータの取り扱いについては <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a> をご確認ください。</li>
+  <li><strong>保存される情報</strong>：ログインに使ったアカウント（Google または Apple）の識別子・表示名・メールアドレス（認証のため）と、読書位置・本棚・表示設定です。Appleでサインインで「メールを非公開」を選んだ場合は、Apple が発行する転送用アドレスが保存され、実際のメールアドレスは本アプリに渡りません。保存したデータは、本人のログインでのみ読み書きできるよう制限しています。</li>
   <li><strong>同期しないもの</strong>：端末に保存した作品の本文ファイルは同期の対象外で、その端末にのみ残ります。</li>
-  <li><strong>削除</strong>：アプリからログアウトすると、その端末での同期は止まります。クラウドに保存したデータの削除をご希望の場合は、<a href="./account-deletion.html">アカウントと同期データの削除</a>をご覧ください。</li>
+  <li><strong>削除</strong>：アプリからログアウトすると、その端末での同期は止まります。アプリの「設定」タブの「アカウントを削除」から、アカウントとクラウドに保存したデータをいつでも削除できます。詳しくは<a href="./account-deletion.html">アカウントと同期データの削除</a>をご覧ください。</li>
 </ul>
 
 <h2>3. 通信先</h2>
 <ul>
   <li><strong>青空文庫（www.aozora.gr.jp）</strong>：作品一覧および作品本文の取得のために通信します。閲覧内容を開発者へ送信することはありません。</li>
   <li><strong>Google（Firebase）</strong>：ログインと読書データの同期のために通信します（ログインした場合のみ）。</li>
+  <li><strong>Apple</strong>：Appleでサインインを使う場合の認証、およびアカウント削除時の連携解除のために通信します（iOS版で該当の操作をした場合のみ）。</li>
   <li><strong>Google（広告配信）</strong>：後述の広告の表示のために通信します。</li>
 </ul>
 
@@ -82,7 +83,7 @@
 
 <div class="lang">
 <h1>Privacy Policy</h1>
-<p class="updated">Aozora Bunko Reader / Last updated: September 1, 2026</p>
+<p class="updated">Aozora Bunko Reader / Last updated: September 19, 2026</p>
 
 <p>Aozora Bunko Reader (the “App”) is an app for reading public-domain Japanese literature published by Aozora Bunko. This policy explains what information the App handles and why.</p>
 
@@ -97,18 +98,19 @@
 <p>All of this is removed from your device when you uninstall the App.</p>
 
 <h2>2. Account sign-in and sync</h2>
-<p>If you sign in with a Google account, your reading positions, bookshelves and display settings are stored in the cloud so you can carry them over to your other devices. Signing in is optional; every reading feature works without it.</p>
+<p>If you sign in with a Google account or with your Apple Account (Sign in with Apple, iOS only), your reading positions, bookshelves and display settings are stored in the cloud so you can carry them over to your other devices. Signing in is optional; every reading feature works without it.</p>
 <ul>
-  <li><strong>Services used</strong>: Google Firebase Authentication for sign-in and Cloud Firestore (stored in the Tokyo region) for the data. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a> for how Google handles it.</li>
-  <li><strong>What is stored</strong>: your Google account identifier, display name and email address (for authentication), plus reading positions, bookshelves and display settings. Security rules restrict access so that only you can read or write your own data.</li>
+  <li><strong>Services used</strong>: Google Firebase Authentication for sign-in (Sign in with Apple goes through Apple’s authentication) and Cloud Firestore (stored in the Tokyo region) for the data. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a> for how Google handles it.</li>
+  <li><strong>What is stored</strong>: the identifier, display name and email address of the account you sign in with (Google or Apple, for authentication), plus reading positions, bookshelves and display settings. If you choose Hide My Email with Sign in with Apple, only Apple’s relay address is stored and your real address is never shared with the App. Security rules restrict access so that only you can read or write your own data.</li>
   <li><strong>What is not synced</strong>: book text files saved for offline reading stay on that device only.</li>
-  <li><strong>Deletion</strong>: signing out stops syncing on that device. To have your stored data deleted, see <a href="./account-deletion.html">Deleting your account and synced data</a>.</li>
+  <li><strong>Deletion</strong>: signing out stops syncing on that device. You can delete your account and all data stored in the cloud at any time from Delete account in the App’s Settings tab. See <a href="./account-deletion.html">Deleting your account and synced data</a>.</li>
 </ul>
 
 <h2>3. Network connections</h2>
 <ul>
   <li><strong>Aozora Bunko (www.aozora.gr.jp)</strong>: to fetch the catalogue and the text of works. What you read is not sent to the developer.</li>
   <li><strong>Google (Firebase)</strong>: for sign-in and syncing your reading data (only when signed in).</li>
+  <li><strong>Apple</strong>: for Sign in with Apple and for revoking it when you delete your account (iOS only, only when you use these features).</li>
   <li><strong>Google</strong>: for serving ads, as described below.</li>
 </ul>
 
